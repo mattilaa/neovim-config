@@ -16,6 +16,9 @@ set relativenumber
 " Enable curson line for better readability
 set cursorline
 
+" Set column to 80 chars
+set cc=80
+
 " Setup tab. Tab = 4 spaces
 set tabstop=4
 set shiftwidth=4
