@@ -11,7 +11,7 @@ let g:fzf_action = {
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 map <C-p> :Files<CR>
-map <leader>b :Buffers<CR>
+map <leader>bb :Buffers<CR>
 map <C-s> :Rg<CR>
 
 " Border color

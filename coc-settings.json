@@ -1,8 +1,52 @@
 {
     // Filter out object files
-    "explorer.file.hiddenRules":
-    {
-      "extensions": ["o", "o2", "os", "a", "obj", "pyc"]
-    },
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
+    "explorer.file.hiddenRules": { "extensions": ["o", "o2", "os", "a", "obj", "pyc"] },
+
+    // Jedi configuration
+    "jedi.enable": true,
+    "jedi.startupMessage": false,
+    "jedi.markupKindPreferred": "plaintext",
+    "jedi.trace.server": "off",
+    "jedi.jediSettings.autoImportModules": [],
+    "jedi.jediSettings.caseInsensitiveCompletion": true,
+    "jedi.jediSettings.debug": false,
+    "jedi.executable.command": "jedi-language-server",
+    "jedi.executable.args": [],
+    "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+    "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+    "jedi.completion.disableSnippets": false,
+    "jedi.completion.resolveEagerly": false,
+    "jedi.completion.ignorePatterns": [],
+    "jedi.diagnostics.enable": true,
+    "jedi.diagnostics.didOpen": true,
+    "jedi.diagnostics.didChange": true,
+    "jedi.diagnostics.didSave": true,
+    "jedi.hover.enable": true,
+    "jedi.hover.disable.keyword.all": false,
+    "jedi.hover.disable.keyword.names": [],
+    "jedi.hover.disable.keyword.fullNames": [],
+    "jedi.workspace.extraPaths": [],
+    "jedi.workspace.symbols.maxSymbols": 20,
+    "jedi.workspace.symbols.ignoreFolders": [ ".nox", ".tox", ".venv", "__pycache__", "venv" ],
+
+    // Clangd configuration
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+
+    // Robot framework configuration
+    "languageserver": {
+        "robotframework_ls": {
+            "command": "robotframework_ls",
+            "filetypes": ["robot"],
+            "args": ["--log-file=~/robot.log"],
+            "settings": {
+                "robot.pythonpath": [
+                        "/home/mattilaa/workspaces/groupmodes/csi_test_tools/src",
+                        "/home/mattilaa/workspaces/groupmodes/csi_test_tools/src/csi_test_tools",
+                        "/home/mattilaa/workspaces/groupmodes/kcegc/tests",
+                        "/home/mattilaa/workspaces/groupmodes/testing_commons/src"
+                    ]
+            }
+        }
+    }
 }
+
